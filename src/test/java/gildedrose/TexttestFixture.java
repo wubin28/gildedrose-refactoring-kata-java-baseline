@@ -6,19 +6,31 @@ public class TexttestFixture {
 
         Item[] items = new Item[]{
                 new Item("+5 Dexterity Vest", 10, 20), //
-                new Item("Aged Brie", 2, 0), //
+                new Item("+5 Dexterity Vest", 10, 0), //
+                new Item("+5 Dexterity Vest", 0, 3), //
+                new Item("+5 Dexterity Vest", 0, 1), //
                 new Item("Elixir of the Mongoose", 5, 7), //
+                new Item("Aged Brie", 2, 0), //
+                new Item("Aged Brie", 2, 50), //
                 new Item("Sulfuras, Hand of Ragnaros", 0, 80), //
                 new Item("Sulfuras, Hand of Ragnaros", -1, 80),
                 new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20),
+                new Item("Backstage passes to a TAFKAL80ETC concert", 15, 50),
+                new Item("Backstage passes to a TAFKAL80ETC concert", 10, 48),
                 new Item("Backstage passes to a TAFKAL80ETC concert", 10, 49),
+                new Item("Backstage passes to a TAFKAL80ETC concert", 5, 47),
                 new Item("Backstage passes to a TAFKAL80ETC concert", 5, 49),
+                new Item("Backstage passes to a TAFKAL80ETC concert", 0, 49),
                 // this conjured item does not work properly yet
-                new Item("Conjured Mana Cake", 3, 6)};
+                new Item("Conjured Mana Cake", 3, 6),
+                new Item("Conjured Mana Cake", 3, 0),
+                new Item("Conjured Mana Cake", 0, 6),
+                new Item("Conjured Mana Cake", 0, 3)
+        };
 
         GildedRose app = new GildedRose(items);
 
-        int days = 2;
+        int days = 30;
         if (args.length > 0) {
             days = Integer.parseInt(args[0]) + 1;
         }
