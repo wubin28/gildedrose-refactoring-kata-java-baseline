@@ -39,5 +39,3 @@ Feel free to make any changes to the UpdateQuality method and add any new code a
 我们最近签约了一个魔法商品供应商，这需要对我们的系统进行更新：
 
 - “魔法”（Conjured）商品每日品质下降速度是正常商品的2倍
-
-只要一切仍能正常工作，请随时对UpdateQuality()方法进行任何更改，或添加任何新代码。但是，请勿更改Item类或Items属性。因为这些代码属于隔壁的土地爷，他不认可团队代码集体所有这回事。如果这些代码被动了，他会蹦出来揍你（如果愿意的话，可以将UpdateQuality()方法和Items属性设为静态的，我们会代你向他求情）。
