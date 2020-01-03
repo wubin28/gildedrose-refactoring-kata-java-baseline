@@ -1,5 +1,24 @@
 # gildedrose-refactoring-kata-java
 
+嗨，欢迎来到镀金玫瑰团队。如您所知，我们是一家小旅馆，位于一线城市的黄金地段，旅馆老板艾里森（Allison）很友好。我们只销售高端商品。不过，每件商品都有一个销售剩余天数。随着时间的推移，商品的品质会不断下降。我们拥有一个可以更新库存信息的系统。一个名叫Leeroy的开发人员开发了这个系统，之后就离开了。你的任务是将新功能添加到该系统中，以便我们可以开始销售新种类的商品。首先介绍一下这个系统：
+
+- 所有商品（Item）都有一个销售剩余天数（SellIn）值，表示该商品必须在该值所代表的天数内销售出去
+- 所有商品都有一个品质（Quality）值，表明该商品当前的品质
+- 每天结束时，系统会降低每个商品的上述两个值
+
+很简单，对吧？但下面的规则就更有趣了：
+
+- 一旦商品过了销售剩余天数之后还未卖出去，那么其每日品质下降的速度就会翻番
+- 商品的品质值不能为负数
+- “陈年干酪”（Aged Brie）的品质值随着时间的推移，不减反增
+- 商品的品质值永远不会超过50
+- 魔法锤（Sulfuras）是一个传奇商品，其销售剩余天数和品质值都不会变化
+- “剧院后台通行证”（Backstage passes），就像陈年干酪一样，其品质值会随着SellIn值的减少而提高——当离演出开始不足10天时，品质值每日提高2；当不足5天时，品质值每日提高3；当演出结束后，品质值下降到0
+
+我们最近签约了一个魔法商品供应商，这需要对我们的系统进行更新：
+
+- “魔法”（Conjured）商品每日品质下降速度是正常商品的2倍
+
 Hi and welcome to team Gilded Rose. As you know, we are a small inn with a prime location in a prominent city ran by a friendly innkeeper named Allison. We also buy and sell only the finest goods. Unfortunately, our goods are constantly degrading in quality as they approach their sell by date. We have a system in place that updates our inventory for us. It was developed by a no-nonsense type named Leeroy, who has moved on to new adventures. Your task is to add the new feature to our system so that we can begin selling a new category of items. First an introduction to our system:
 
 - All items have a SellIn value which denotes the number of days we have to sell the item
@@ -21,21 +40,3 @@ We have recently signed a supplier of conjured items. This requires an update to
 
 Feel free to make any changes to the UpdateQuality method and add any new code as long as everything still works correctly. However, do not alter the Item class or Items property as those belong to the goblin in the corner who will insta-rage and one-shot you as he doesn’t believe in shared code ownership (you can make the UpdateQuality method and Items property static if you like, we’ll cover for you).
 
-嗨，欢迎来到镀金玫瑰团队。如您所知，我们是一家小旅馆，位于一线城市的黄金地段，旅馆老板艾里森（Allison）很友好。我们只销售高端商品。不过，每件商品都有一个销售剩余天数。随着时间的推移，商品的品质会不断下降。我们拥有一个可以更新库存信息的系统。一个名叫Leeroy的开发人员开发了这个系统，之后就离开了。你的任务是将新功能添加到该系统中，以便我们可以开始销售新种类的商品。首先介绍一下这个系统：
-
-- 所有商品（Item）都有一个销售剩余天数（SellIn）值，表示该商品必须在该值所代表的天数内销售出去
-- 所有商品都有一个品质（Quality）值，表明该商品当前的品质
-- 每天结束时，系统会降低每个商品的上述两个值
-
-很简单，对吧？但下面的规则就更有趣了：
-
-- 一旦商品过了销售剩余天数之后还未卖出去，那么其每日品质下降的速度就会翻番
-- 商品的品质值不能为负数
-- “陈年干酪”（Aged Brie）的品质值随着时间的推移，不减反增
-- 商品的品质值永远不会超过50
-- 魔法锤（Sulfuras）是一个传奇商品，其销售剩余天数和品质值都不会变化
-- “剧院后台通行证”（Backstage passes），就像陈年干酪一样，其品质值会随着SellIn值的减少而提高——当离演出开始不足10天时，品质值每日提高2；当不足5天时，品质值每日提高3；当演出结束后，品质值下降到0
-
-我们最近签约了一个魔法商品供应商，这需要对我们的系统进行更新：
-
-- “魔法”（Conjured）商品每日品质下降速度是正常商品的2倍
