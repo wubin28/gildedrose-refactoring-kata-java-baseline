@@ -25,11 +25,6 @@ public class Item {
         boolean isSulfuras = name.equals("Sulfuras, Hand of Ragnaros");
         if (isAgedBrie) {
             if (!isAgedBrie && !isBackstage) {
-                if (quality > 0) {
-                    if (!isSulfuras) {
-                        quality = quality - 1;
-                    }
-                }
             } else {
                 if (quality < 50) {
                     quality = quality + 1;
