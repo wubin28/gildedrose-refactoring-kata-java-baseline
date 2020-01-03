@@ -1,4 +1,8 @@
-# gildedrose-refactoring-kata-java
+# gildedrose-refactoring-kata-java-baseline
+
+[本题目参考重构代码](https://github.com/wubin28/gildedrose-refactoring-kata-java)
+
+## 需求
 
 嗨，欢迎来到镀金玫瑰团队。如您所知，我们是一家小旅馆，位于一线城市的黄金地段，旅馆老板艾里森（Allison）很友好。我们只销售高端商品。不过，每件商品都有一个销售剩余天数。随着时间的推移，商品的品质会不断下降。我们拥有一个可以更新库存信息的系统。一个名叫Leeroy的开发人员开发了这个系统，之后就离开了。你的任务是将新功能添加到该系统中，以便我们可以开始销售新种类的商品。首先介绍一下这个系统：
 
