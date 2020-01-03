@@ -29,9 +29,7 @@ public class Item {
 
             }
 
-            if (!isSulfuras) {
-                sellIn = sellIn - 1;
-            }
+            sellIn = sellIn - 1;
 
             if (sellIn < 0) {
                 if (!isAgedBrie) {
