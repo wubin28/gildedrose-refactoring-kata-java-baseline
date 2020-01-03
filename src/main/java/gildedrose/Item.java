@@ -24,8 +24,7 @@ public class Item {
         boolean isBackstage = name.equals("Backstage passes to a TAFKAL80ETC concert");
         boolean isSulfuras = name.equals("Sulfuras, Hand of Ragnaros");
         if (isAgedBrie) {
-            if (!isAgedBrie && !isBackstage) {
-            } else {
+            if (isAgedBrie || isBackstage) {
                 if (quality < 50) {
                     quality = quality + 1;
 
