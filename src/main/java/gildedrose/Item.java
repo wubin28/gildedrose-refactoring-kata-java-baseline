@@ -23,10 +23,6 @@ public class Item {
         boolean isAgedBrie = name.equals("Aged Brie");
         boolean isBackstage = name.equals("Backstage passes to a TAFKAL80ETC concert");
         boolean isSulfuras = name.equals("Sulfuras, Hand of Ragnaros");
-        if (isSulfuras) {
-
-            return;
-        }
         if (!isAgedBrie && !isBackstage && !isSulfuras) {
 
         }
