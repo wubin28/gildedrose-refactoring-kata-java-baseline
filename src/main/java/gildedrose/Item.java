@@ -31,10 +31,8 @@ public class Item {
             sellIn = sellIn - 1;
 
             if (sellIn < 0) {
-                if (isAgedBrie) {
-                    if (quality < 50) {
-                        quality = quality + 1;
-                    }
+                if (quality < 50) {
+                    quality = quality + 1;
                 }
             }
             return;
