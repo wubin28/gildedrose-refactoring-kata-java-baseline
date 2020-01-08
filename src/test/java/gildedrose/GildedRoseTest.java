@@ -1,6 +1,7 @@
 package gildedrose;
 
 import org.approvaltests.Approvals;
+import org.approvaltests.combinations.CombinationApprovals;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -13,7 +14,14 @@ public class GildedRoseTest {
         int sellIn = 0;
         int quality = 0;
         String itemString = doUpdateQuality(name, sellIn, quality);
-        Approvals.verify(itemString);
+
+        // Approvals.verify(itemString);
+        CombinationApprovals.verifyAllCombinations(
+                this::doUpdateQuality,
+                new String[]{name},
+                new Integer[]{sellIn},
+                new Integer[]{quality}
+        );
     }
 
     private String doUpdateQuality(String name, int sellIn, int quality) {
