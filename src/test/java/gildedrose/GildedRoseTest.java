@@ -9,7 +9,10 @@ public class GildedRoseTest {
 
     @Test
     public void updateQuality() {
-        String itemString = doUpdateQuality("foo", 0, 0);
+        String name = "foo";
+        int sellIn = 0;
+        int quality = 0;
+        String itemString = doUpdateQuality(name, sellIn, quality);
         Approvals.verify(itemString);
     }
 
