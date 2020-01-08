@@ -10,17 +10,11 @@ public class GildedRoseTest {
 
     @Test
     public void updateQuality() {
-        String name = "foo";
-        int sellIn = 0;
-        int quality = 0;
-        String itemString = doUpdateQuality(name, sellIn, quality);
-
-        // Approvals.verify(itemString);
         CombinationApprovals.verifyAllCombinations(
                 this::doUpdateQuality,
-                new String[]{name},
-                new Integer[]{sellIn},
-                new Integer[]{quality}
+                new String[]{"foo"},
+                new Integer[]{0},
+                new Integer[]{0}
         );
     }
 
