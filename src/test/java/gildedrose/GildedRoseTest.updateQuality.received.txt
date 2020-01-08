@@ -1,1 +1,2 @@
 [foo, 0, 0] => foo, -1, 0 
+[Aged Brie, 0, 0] => Aged Brie, -1, 2 
