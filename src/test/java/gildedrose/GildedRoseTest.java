@@ -9,12 +9,12 @@ public class GildedRoseTest {
 
     @Test
     public void updateQuality() {
-        String itemString = doUpdateQuality();
+        String itemString = doUpdateQuality("foo", 0, 0);
         Approvals.verify(itemString);
     }
 
-    private String doUpdateQuality() {
-        Item[] items = new Item[]{new Item("foo", 0, 0)};
+    private String doUpdateQuality(String name, int sellIn, int quality) {
+        Item[] items = new Item[]{new Item(name, sellIn, quality)};
         GildedRose app = new GildedRose(items);
         app.updateQuality();
         // assertEquals("foo", app.items[0].name);
