@@ -13,7 +13,8 @@ public class GildedRoseTest {
         GildedRose app = new GildedRose(items);
         app.updateQuality();
         // assertEquals("foo", app.items[0].name);
-        Approvals.verify(app.items[0].toString());
+        String itemString = app.items[0].toString();
+        Approvals.verify(itemString);
     }
 
 }
