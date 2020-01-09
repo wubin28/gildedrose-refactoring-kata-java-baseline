@@ -1,6 +1,5 @@
 package gildedrose;
 
-import org.approvaltests.Approvals;
 import org.approvaltests.combinations.CombinationApprovals;
 import org.junit.Test;
 
@@ -19,7 +18,7 @@ public class GildedRoseTest {
     }
 
     private String doUpdateQuality(String name, int sellIn, int quality) {
-        Item[] items = new Item[]{new Item(name, sellIn, quality)};
+        Item[] items = new Item[]{Item.createItem(name, sellIn, quality)};
         GildedRose app = new GildedRose(items);
         app.updateQuality();
         // assertEquals("foo", app.items[0].name);

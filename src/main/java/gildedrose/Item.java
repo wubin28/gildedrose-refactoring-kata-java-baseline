@@ -8,10 +8,14 @@ public class Item {
 
     public int quality;
 
-    public Item(String name, int sellIn, int quality) {
+    private Item(String name, int sellIn, int quality) {
         this.name = name;
         this.sellIn = sellIn;
         this.quality = quality;
+    }
+
+    public static Item createItem(String name, int sellIn, int quality) {
+        return new Item(name, sellIn, quality);
     }
 
     @Override
