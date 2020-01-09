@@ -28,7 +28,11 @@ public class GildedRose {
                 }
             }
         } else {
-            foo(item);
+            if ("Backstage passes to a TAFKAL80ETC concert".equals(item.name)) {
+                foo(item);
+            } else {
+                foo(item);
+            }
         }
     }
 
