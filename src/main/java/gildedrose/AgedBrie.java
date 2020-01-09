@@ -7,7 +7,7 @@ public class AgedBrie extends Item {
 
     @Override
     void doUpdateQuality() {
-        if ("Aged Brie".equals(name)) {
+        if (true) {
             if (quality < 50) {
                 quality = quality + 1;
             }
@@ -19,7 +19,7 @@ public class AgedBrie extends Item {
                     quality = quality + 1;
                 }
             }
-        } else if ("Backstage passes to a TAFKAL80ETC concert".equals(name)) {
+        } else if (false) {
             if (quality < 50) {
                 quality = quality + 1;
 
@@ -41,7 +41,7 @@ public class AgedBrie extends Item {
             if (sellIn < 0) {
                 quality = quality - quality;
             }
-        } else if ("Sulfuras, Hand of Ragnaros".equals(name)) {
+        } else if (false) {
         } else {
             if (quality > 0) {
                 quality = quality - 1;
