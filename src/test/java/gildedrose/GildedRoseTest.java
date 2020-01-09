@@ -13,8 +13,8 @@ public class GildedRoseTest {
         CombinationApprovals.verifyAllCombinations(
                 this::doUpdateQuality,
                 new String[]{"foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert", "Sulfuras, Hand of Ragnaros"},
-                new Integer[]{-1, 0, 1, 6, 11},
-                new Integer[]{0, 1, 49, 50}
+                new Integer[]{-1, 0, 1, 4, 5, 6, 9, 10, 11},
+                new Integer[]{0, 1, 2, 3, 46, 47, 48, 49, 50}
         );
     }
 
