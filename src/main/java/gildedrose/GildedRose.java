@@ -16,7 +16,7 @@ public class GildedRose {
 
     private void doUpdateQuality(Item item) {
         if ("Aged Brie".equals(item.name)) {
-            if (!item.name.equals("Aged Brie")
+            if (false
                     && !item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
                 if (item.quality > 0) {
                     if (!item.name.equals("Sulfuras, Hand of Ragnaros")) {
