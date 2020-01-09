@@ -15,7 +15,11 @@ public class GildedRose {
     }
 
     private void doUpdateQuality(Item item) {
-        foo(item);
+        if ("Aged Brie".equals(item.name)) {
+            foo(item);
+        } else {
+            foo(item);
+        }
     }
 
     private void foo(Item item) {
