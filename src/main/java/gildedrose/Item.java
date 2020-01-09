@@ -8,7 +8,7 @@ public class Item {
 
     public int quality;
 
-    private Item(String name, int sellIn, int quality) {
+    Item(String name, int sellIn, int quality) {
         this.name = name;
         this.sellIn = sellIn;
         this.quality = quality;
